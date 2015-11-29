@@ -25,7 +25,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # gema para usar el framework materialize
 gem 'materialize-sass'
-
+gem 'pg'
 # gema para usar Font-Awesome
 gem 'font-awesome-sass'
 
@@ -51,3 +51,4 @@ group :development do
   gem 'spring'
 end
 
+gem 'omniauth-google-oauth2'

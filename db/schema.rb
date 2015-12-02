@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(version: 20151202074424) do
   create_table "curso_alumnos", force: :cascade do |t|
     t.integer  "curso_id",   null: false
     t.integer  "alumno_id",  null: false
-    t.integer  "grupo_id",   null: false
+    t.integer  "grupo_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

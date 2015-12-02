@@ -1,5 +1,7 @@
 class Encuesta < ActiveRecord::Base
+  self.table_name = "encuestas"
+
   has_many :encuesta_preguntums
   has_many :evaluacions
-  belong_to :tipo_encuestum
+  belongs_to :tipo_encuestum
 end

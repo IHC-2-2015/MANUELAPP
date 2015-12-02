@@ -1,9 +1,7 @@
 class CreatePregunta < ActiveRecord::Migration
   def change
-    create_table :pregunta do |t|
-      t.integer :Pregunta_id
-      t.text :Pregunta_enunciado
-      t.text :Pregunta_Descripcion
+    create_table :preguntas do |t|
+      t.string  :enunciado
 
       t.timestamps null: false
     end

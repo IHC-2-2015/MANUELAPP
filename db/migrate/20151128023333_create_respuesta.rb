@@ -1,8 +1,10 @@
 class CreateRespuesta < ActiveRecord::Migration
   def change
-    create_table :respuesta do |t|
-      t.integer :Respuesta_id
-      t.integer :Respuesta_modulo
+    create_table :respuestas do |t|
+      t.integer :modulo
+      t.integer :encuestado_id
+      t.integer :encuestador_id
+      t.integer :evaluacion_id
 
       t.timestamps null: false
     end

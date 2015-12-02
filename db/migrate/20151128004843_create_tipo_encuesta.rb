@@ -1,8 +1,7 @@
 class CreateTipoEncuesta < ActiveRecord::Migration
   def change
-    create_table :tipo_encuesta do |t|
-      t.integer :Tipo_id
-      t.string :Tipo_nombre
+    create_table :tipos_encuesta do |t|
+      t.string  :nombre
 
       t.timestamps null: false
     end

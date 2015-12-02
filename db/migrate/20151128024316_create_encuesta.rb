@@ -1,10 +1,10 @@
 class CreateEncuesta < ActiveRecord::Migration
   def change
-    create_table :encuesta do |t|
-      t.integer :Encuesta_id
-      t.boolean :Encuesta_estado
-      t.string :Encuesta_nombre
-      t.text :Encuesta_descripcion
+    create_table :encuestas do |t|
+      t.boolean :estado # ???
+      t.string  :nombre
+      t.text    :descripcion
+      t.integer :tipo_encuesta_id
 
       t.timestamps null: false
     end

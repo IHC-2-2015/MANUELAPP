@@ -1,8 +1,9 @@
 class CreateEvaluacions < ActiveRecord::Migration
   def change
-    create_table :evaluacions do |t|
-      t.integer :Evaluacion_id
-      t.integer :Evaluacion_contestada
+    create_table :evaluaciones do |t|
+      t.integer :contestada   # ???
+      t.integer :curso_id
+      t.integer :encuesta_id    # ???
 
       t.timestamps null: false
     end

@@ -61,6 +61,15 @@ class UsuariosController < ApplicationController
     end
   end
 
+  def buscar_por_correo
+      @usuario= Usuario.where("correo= ?", params[:correo]).first
+
+      respond_to do |format|
+        format.html { redirect_to usuarios_url, notice: 'El usuario no existe' }
+        format.json{ render json: @usuario}
+      end
+    end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_usuario
@@ -71,4 +80,5 @@ class UsuariosController < ApplicationController
     def usuario_params
       params.require(:usuario).permit(:Usuario_rut, :Usuario_nombre, :Usuario_correo)
     end
+
 end

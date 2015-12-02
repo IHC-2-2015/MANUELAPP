@@ -61,6 +61,23 @@ class GruposController < ApplicationController
     end
   end
 
+    def grupo_curso
+      @grupo = Grupo.where("curso_id= ?", params[:curso_id]).first
+      respond_to do |format|
+        format.html { redirect_to grupos_url, notice: 'No hay grupos en el curso' }
+        format.json { render json: @grupo}
+      end
+    end
+
+    def grupo_alumno
+      @grupo = Grupo.where("alumno_id= ?", params[:curso_id]).first
+      respond_to do |format|
+        format.html { redirect_to grupos_url, notice: 'No hay grupos para el alumno' }
+        format.json { render json: @grupo}
+      end
+    end
+
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_grupo
@@ -71,4 +88,6 @@ class GruposController < ApplicationController
     def grupo_params
       params.require(:grupo).permit(:Grupo_id, :Grupo_lider)
     end
+
+
 end

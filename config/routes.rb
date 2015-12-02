@@ -1,4 +1,15 @@
 Rails.application.routes.draw do
+  resources :opcions
+  resources :pregunta
+  resources :encuesta_pregunta
+  resources :encuesta
+  resources :grupos
+  resources :curso_alumnos
+  resources :respuesta
+  resources :evaluacions
+  resources :tipo_encuesta
+  resources :cursos
+  resources :usuarios
   get 'static_pages/home'
 
   root 'static_pages#home'

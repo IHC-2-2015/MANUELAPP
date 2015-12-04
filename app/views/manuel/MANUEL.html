@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title >MANUEL</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/colores.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/arreglos.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> 
+    <nav class="barraSuperior sinSombra">
+      <div class="nav-wrapper container">
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a class="azul-oscuro" href="#"><i class="fa fa-user fa-lg fa-pull-left"></i> Usuario</a></li>
+          <li><a class="azul-oscuro" href="#"><i class="fa fa-power-off fa-2x fa-pull-left"></i> Salir</a></li>
+        </ul>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="fa fa-bars fa-fw azul-oscuro"></i></a>
+        <ul id="nav-mobile" class="left hide-on-med-and-down">
+        </ul>
+      <ul class="side-nav" id="mobile-demo">
+          <li><a href="#">Usuario</a></li>
+          <div class="divider"></div>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Cursos</a></li>
+          <li><a href="#">Mensajes</a></li>
+          <li><a href="#">Soporte</a></li>
+          <li><a href="#">Acerca de</a></li>
+          <li><a href="#">Salir</a></li>
+        </ul>
+        <ul id="nav-mobile" class="left">
+          <li><img src="imagenes/logom.gif"></li>
+        </ul>
+        <ul id="nav-mobile" class="left hide-on-med-and-down">
+          <li><a class="azul-oscuro" href="MANUEL.HTML">Inicio</a></li>
+          <li><a class="azul-oscuro" href="#">Cursos</a></li>
+          <li><a class="azul-oscuro" href="#">Mensajes</a></li>
+          <li><a class="azul-oscuro" href="#">Soporte</a></li>
+          <li><a class="azul-oscuro" href="#">Acerca de</a></li>
+        </ul>
+      </div>
+    </nav>
+</head>
+<body>
+<!-- Aqui inicia contenido -->
+<div class="container">
+<h4 class="orange-text">Curso 1</h4></div>
+<div class="contain blanco wrapper z-depth-2">
+  <div class="container">
+      <div class="row">
+      <div class="col s12">
+        <ul class="tabs">
+          <li class="tab col s3"><a class="active" href="#Perfil">Perfil</a></li>
+          <li class="tab col s3"><a href="#Grupos">Grupos</a></li>
+          <li class="tab col s3"><a href="#Alumnos">Alumnos</a></li>
+          <li class="tab col s3"><a href="#Evaluaciones">Evaluaciones</a></li>
+          <li class="tab col s3"><a href="#Opciones"><div class="col s2"><i class="small material-icons" style="vertical-align:middle">settings</i></div><div class="col s8">Opciones</div></a></li>
+        </ul>
+      </div>
+
+      <div id="Perfil" class="col s12">
+        <div class="row">
+          <div class="col s12 m8">
+            <div class="icon-block">
+              <h2 class="turquesa"><i class="large material-icons">assignment</i></h2>
+              <h5 class="azul-oscuro" align="left">Descripción</h5>
+              <p class="azul-oscuro" align="justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum euismod placerat. Nunc et mauris sollicitudin risus dapibus accumsan. Proin convallis facilisis imperdiet. Nam sit amet nisi libero. Aliquam placerat vitae felis.</p>
+            </div>
+          </div>
+
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="turquesa"><i class="large material-icons">info_outline</i></h2>
+              <h5 class="azul-oscuro">Datos generales</h5>
+              <p></p>
+              <p class="azul-oscuro" align="justify">11 alumnos</p>
+              <p class="azul-oscuro" align="justify">3 grupos</p>
+              <p class="azul-oscuro" align="justify">2 encuestas</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="Grupos" class="col s12">
+
+        <br></br>
+        <br></br>
+        <div class="row">
+          <div class="col s3 right">
+            <button class="btn waves-effect waves-light right row" style="padding:0px;" align="middle" type="submit" name="action">   
+              <div class="col s1"><h5 class="top" style="padding:5px;border:0px;margin:0px;">+</h5></div>
+              <div class="col s10 right">Agregar grupo</div>
+            </button>
+          </div>
+        </div>
+        <div class="col s12 m6">
+          <div class="card-panel footerColor">
+            <div class="row card-content">
+              <div class="col s7 left"><a href="detalle-grupo.html"><h5 class="azul-oscuro col s6">Grupo 1</h5></a></div>
+              <div class="col s5">
+              <button class="btn waves-effect waves-light right" OnClick=" location.href='detalle-grupo.html' " align="middle" type="button">  
+                Detalle
+              </button>
+              </div>
+            </div>
+            <div class="row">
+              <p class="azul-oscuro" style="padding-left:10px">5 Integrantes</p>
+              <p class="azul-oscuro" style="padding-left:10px">3 Encuestas</p>
+            </div>
+            <div class="divider row"></div>
+            <div class="row">
+              <div class="col s2">
+                <img class="circle center"  height="60px" width="60px" src="imagenes/foto.jpg">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6">
+          <div class="card-panel footerColor">
+            <div class="row card-content">
+              <div class="col s7 left"><a href="detalle-grupo.html"><h5 class="azul-oscuro col s6">Grupo 2</h5></a></div>
+              <div class="col s5">
+              <button class="btn waves-effect waves-light right" OnClick=" location.href='detalle-grupo.html' " align="middle" type="button">  
+                Detalle
+              </button>
+              </div>
+            </div>
+            <div class="row">
+              <p class="azul-oscuro" style="padding-left:10px">5 Integrantes</p>
+              <p class="azul-oscuro" style="padding-left:10px">3 Encuestas</p>
+            </div>
+            <div class="divider row"></div>
+            <div class="row">
+              <div class="col s2">
+                <img class="circle center"  height="60px" width="60px" src="imagenes/foto.jpg">
+              </div>
+              <div class="col s2">
+                <img class="circle center"  height="60px" width="60px" src="imagenes/foto.jpg">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6">
+          <div class="card-panel footerColor">
+            <div class="row card-content">
+              <div class="col s7 left"><a href="detalle-grupo.html"><h5 class="azul-oscuro col s6">Grupo 3</h5></a></div>
+              <div class="col s5">
+              <button class="btn waves-effect waves-light right" OnClick=" location.href='detalle-grupo.html' " align="middle" type="button">  
+                Detalle
+              </button>
+              </div>
+            </div>
+            <div class="row">
+              <p class="azul-oscuro" style="padding-left:10px">5 Integrantes</p>
+              <p class="azul-oscuro" style="padding-left:10px">3 Encuestas</p>
+            </div>
+            <div class="divider row"></div>
+            <div class="row">
+              <div class="col s2">
+                <img class="circle center"  height="60px" width="60px" src="imagenes/foto.jpg">
+              </div>
+              <div class="col s2">
+                <img class="circle center"  height="60px" width="60px" src="imagenes/foto.jpg">
+              </div>
+              <div class="col s2">
+                <img class="circle center"  height="60px" width="60px" src="imagenes/foto.jpg">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="Alumnos" class="col s12">
+        <br></br>
+        <br></br>
+        <div class="row">
+          <div class="col s6 center"></div>
+          <div class="input-field col s8">
+            <input id="search" type="search" placeholder="Encontrar alumno" required>
+            <label for="search"><i class="material-icons prefix">search</i></label>
+            <i class="material-icons">close</i>
+          </div>
+          <div class="col s4 right">
+            <p></p>
+            <button class="btn waves-effect waves-light" align="middle" type="submit" name="action">            
+            Agregar alumno
+            </button>
+          </div>
+        </div>
+
+        <div class="divider row"></div>
+        <div class="section row">
+            <div class="col s2"><img class="circle responsive-img s2 foto-alumno" src="imagenes/foto.jpg"></div>
+            <div class="col s4"><h5 class="azul-oscuro">Pablo Salinas</h5></div>
+            <div class="col s2"><p class="azul-oscuro">Grupo 1</p></div>
+            <div class="col s2"><p class="azul-oscuro">1 encuesta respondida</p></div>  
+        </div>
+        <div class="divider row"></div>
+
+        <div class="section row">
+            <div class="col s2"><img class="circle responsive-img s2 foto-alumno" src="imagenes/foto.jpg"></div>
+            <div class="col s4"><h5 class="azul-oscuro">Pablo Salinas</h5></div>
+            <div class="col s2"><p class="azul-oscuro">Grupo 1</p></div>
+            <div class="col s2"><p class="azul-oscuro">1 encuesta respondida</p></div>
+        </div>
+        <div class="divider row"></div>
+      </div>
+
+      <div id="Evaluaciones" class="col s12">
+        <br></br>
+        <br></br>       
+        <div class="row">
+          <div class="col s3 right">
+            <button class="btn waves-effect waves-light right row" style="padding:0px;" align="middle" type="submit" name="action">   
+              <div class="col s1"><h5 class="top" style="padding:5px;border:0px;margin:0px;">+</h5></div>
+              <div class="col s10 right">Nueva encuesta</div>
+            </button>
+          </div>
+        </div>
+        <div class="divider s10 row"></div>
+        <div class="section s10 row">
+            <div class="col s4"><h5 class="azul-oscuro">Encuesta 360 IHC S0</h5></div>
+            <div class="col s2"><p class="azul-oscuro">Grupo 1, Grupo 2, Grupo 3</p></div>
+            <div class="col s2"><p class="azul-oscuro">2 encuestas respondidas</p></div>
+            <div class="col s2"><p class="azul-oscuro">23 participantes</p></div>
+            <div class="col s2">
+              <button class="btn waves-effect waves-light right" align="middle" type="button">  
+                Detalle
+              </button>
+            </div> 
+
+        </div>
+        <div class="divider s10 row"></div>
+
+        <div class="section s10 row">
+            <div class="col s4"><h5 class="azul-oscuro">Encuesta 360 IHC S1</h5></div>
+            <div class="col s2"><p class="azul-oscuro">Grupo 1, Grupo 2, Grupo 3</p></div>
+            <div class="col s2"><p class="azul-oscuro">5 encuestas respondidas</p></div>
+            <div class="col s2"><p class="azul-oscuro">23 participantes</p></div>
+            <div class="col s2">
+              <button class="btn waves-effect waves-light right" align="middle" type="button">  
+                Detalle
+              </button>
+            </div>
+        </div>
+        <div class="divider row"></div>
+      </div>
+      
+      <div id="Opciones" class="col s12"><p align="justify" class="azul-oscuro">Diferentes opciones</p></div>
+    
+    </div>
+  </div>
+  <br><br>
+  <!-- Aqui termina contenido -->
+    </div>
+    <br><br><br><br>
+
+    <footer class="page-footer footerColor">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 l8 ">
+              <h5 class="white-text">Mesa de ayuda</h5>
+                <p class="white-text text-lighten-4 ">(562) 2 999 99999 - 2 888 88888</p>
+                <p class="white-text text-lighten-4"><strong>Universidad de Santiago de Chile</strong><br/>Av. Libertador Bernardo O'Higgins 3363, Santiago, Región Metropolitana</p>
+          </div>
+          <div class="col s12 l4">
+               <div class="icon-block center">
+                  <h2>
+                    <img src="imagenes/logousach.png" style="max-width: 42.5%; max-height: 42.5%;"/>
+                  </h2>
+               </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container white-text">
+        © 2015 Copyright Text
+        </div>
+      </div>
+    </footer>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.min.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>

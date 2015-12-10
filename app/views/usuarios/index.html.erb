@@ -8,16 +8,18 @@
       <th>Usuario rut</th>
       <th>Usuario nombre</th>
       <th>Usuario correo</th>
-      <th colspan="3"></th>
+      <th>Usuario rol</th>
+      <th colspan="4"></th>
     </tr>
   </thead>
 
   <tbody>
     <% @usuarios.each do |usuario| %>
       <tr>
-        <td><%= usuario.Usuario_rut %></td>
-        <td><%= usuario.Usuario_nombre %></td>
-        <td><%= usuario.Usuario_correo %></td>
+        <td><%= usuario.rut %></td>
+        <td><%= usuario.nombre %></td>
+        <td><%= usuario.correo %></td>
+        <td><%= usuario.rol %></td>
         <td><%= link_to 'Show', usuario %></td>
         <td><%= link_to 'Edit', edit_usuario_path(usuario) %></td>
         <td><%= link_to 'Destroy', usuario, method: :delete, data: { confirm: 'Are you sure?' } %></td>

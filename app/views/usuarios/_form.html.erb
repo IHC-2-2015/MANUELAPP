@@ -12,16 +12,20 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :Usuario_rut %><br>
-    <%= f.number_field :Usuario_rut %>
+    <%= f.label :rut %><br>
+    <%= f.number_field :rut %>
   </div>
   <div class="field">
-    <%= f.label :Usuario_nombre %><br>
-    <%= f.text_field :Usuario_nombre %>
+    <%= f.label :nombre %><br>
+    <%= f.text_field :nombre %>
   </div>
   <div class="field">
-    <%= f.label :Usuario_correo %><br>
-    <%= f.text_field :Usuario_correo %>
+    <%= f.label :correo %><br>
+    <%= f.text_field :correo %>
+  </div>
+  <div class="field">
+    <%= f.label :rol %><br>
+    <%= f.text_field :rol %>
   </div>
   <div class="actions">
     <%= f.submit %>

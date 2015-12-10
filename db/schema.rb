@@ -26,60 +26,62 @@ ActiveRecord::Schema.define(version: 20151202074424) do
   end
 
   create_table "curso_alumnos", force: :cascade do |t|
-    t.integer  "curso_id",   null: false
-    t.integer  "alumno_id",  null: false
-    t.integer  "grupo_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.integer  "Curso_Alumno_id"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
   end
 
   create_table "cursos", force: :cascade do |t|
-    t.integer  "profesor_id"
-    t.string   "nombre"
-    t.integer  "semestre"
-    t.integer  "año"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.integer  "Curso_id"
+    t.string   "Curso_nombre"
+    t.integer  "Curso_semestre"
+    t.integer  "Curso_año"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
   end
 
-  create_table "encuestas", force: :cascade do |t|
-    t.boolean  "estado"
-    t.string   "nombre"
-    t.text     "descripcion"
-    t.integer  "tipo_encuesta_id"
-    t.datetime "created_at",       null: false
-    t.datetime "updated_at",       null: false
+  create_table "encuesta", force: :cascade do |t|
+    t.integer  "Encuesta_id"
+    t.boolean  "Encuesta_estado"
+    t.string   "Encuesta_nombre"
+    t.text     "Encuesta_descripcion"
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
   end
 
-  create_table "evaluaciones", force: :cascade do |t|
-    t.integer  "contestada"
-    t.integer  "curso_id"
-    t.integer  "encuesta_id"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+  create_table "encuesta_pregunta", force: :cascade do |t|
+    t.integer  "Encuesta_Pregunta_id"
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
+  end
+
+  create_table "evaluacions", force: :cascade do |t|
+    t.integer  "Evaluacion_id"
+    t.integer  "Evaluacion_contestada"
+    t.datetime "created_at",            null: false
+    t.datetime "updated_at",            null: false
   end
 
   create_table "grupos", force: :cascade do |t|
-    t.string   "nombre"
-    t.integer  "alumno_id"
-    t.integer  "curso_id"
-    t.text     "descripcion"
+    t.integer  "Grupo_id"
+    t.string   "Grupo_lider"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end
 
-  create_table "opciones", force: :cascade do |t|
-    t.integer  "valor"
-    t.string   "opcion_text"
-    t.integer  "pregunta_id"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+  create_table "opcions", force: :cascade do |t|
+    t.integer  "Opcion_id"
+    t.integer  "Opcion_valor"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
   end
 
-  create_table "preguntas", force: :cascade do |t|
-    t.string   "enunciado"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+  create_table "pregunta", force: :cascade do |t|
+    t.integer  "Pregunta_id"
+    t.text     "Pregunta_enunciado"
+    t.text     "Pregunta_Descripcion"
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
   end
 
   create_table "profesores", force: :cascade do |t|
@@ -91,28 +93,35 @@ ActiveRecord::Schema.define(version: 20151202074424) do
     t.datetime "updated_at",  null: false
   end
 
-  create_table "respuestas", force: :cascade do |t|
-    t.integer  "modulo"
-    t.integer  "encuestado_id"
-    t.integer  "encuestador_id"
-    t.integer  "evaluacion_id"
-    t.datetime "created_at",     null: false
-    t.datetime "updated_at",     null: false
+  create_table "respuesta", force: :cascade do |t|
+    t.integer  "Respuesta_id"
+    t.integer  "Respuesta_modulo"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
   end
 
-  create_table "tipos_encuesta", force: :cascade do |t|
-    t.string   "nombre"
+  create_table "tipo_encuesta", force: :cascade do |t|
+    t.integer  "Tipo_id"
+    t.string   "Tipo_nombre"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string   "provider"
+    t.string   "uid"
+    t.string   "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "usuarios", force: :cascade do |t|
-    t.string   "rut"
-    t.string   "nombre"
-    t.string   "correo"
-    t.integer  "rol"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.integer  "Usuario_rut"
+    t.string   "Usuario_nombre"
+    t.string   "Usuario_correo"
+    t.integer  "Usuario_rol"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
   end
 
 end

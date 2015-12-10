@@ -2,17 +2,22 @@
 
 <p>
   <strong>Usuario rut:</strong>
-  <%= @usuario.Usuario_rut %>
+  <%= @usuario.rut %>
 </p>
 
 <p>
   <strong>Usuario nombre:</strong>
-  <%= @usuario.Usuario_nombre %>
+  <%= @usuario.nombre %>
 </p>
 
 <p>
   <strong>Usuario correo:</strong>
-  <%= @usuario.Usuario_correo %>
+  <%= @usuario.correo %>
+</p>
+
+<p>
+  <strong>Usuario rol:</strong>
+  <%= @usuario.rol %>
 </p>
 
 <%= link_to 'Edit', edit_usuario_path(@usuario) %> |
